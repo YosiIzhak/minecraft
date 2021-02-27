@@ -1,0 +1,154 @@
+#showcase {
+    background: url(../img/tenor1.gif) no-repeat center center/cover;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+#world {
+    height: fit-content;
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 4fr 2fr;
+}
+
+.start {
+    margin-bottom: 10vh;
+    color: blueviolet;
+    font-size: 25px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.cube {
+    width: 3vw;
+    height: 5vh;
+    display: inline-block;
+}
+
+.cube:hover {
+    background-color: yellow;
+}
+
+.sky {
+    background-color: dodgerblue;
+}
+
+.ground {
+    background: url(../img/ground.jpg)no-repeat center center/cover;
+}
+
+.edge {
+    background: url(../img/edge.jpg) no-repeat center center/cover;
+}
+
+.wood {
+    background: url(../img/wood.jpg) no-repeat center center/cover;
+}
+
+.leaves {
+    background: url(../img/leaves.jpg) no-repeat center center/cover;
+}
+
+.stone {
+    background: url(../img/stone.jpg) no-repeat center center/cover;
+}
+
+.cloud {
+    background-color: white;
+}
+
+.board {
+    display: grid;
+    grid-template-rows: repeat(18, auto);
+    grid-template-columns: repeat(22, auto);
+    max-height: fit-content;
+    width: fit-content;
+}
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(24, 24, 24, 0.9);
+    max-height: 100vh;
+}
+
+.axe {
+    height: 12vh;
+    width: 10vw;
+    background: url(../img/axe.jpg) no-repeat center center/cover;
+    border: 1px solid seashell;
+    margin: 15px;
+}
+
+.pickaxe {
+    height: 12vh;
+    width: 10vw;
+    background: url(../img/pickaxe.png) no-repeat center center/cover;
+    border: 1px solid seashell;
+    margin: 10px;
+}
+
+.shovel {
+    height: 12vh;
+    width: 10vw;
+    background: url(../img/shovel.jpg) no-repeat center center/cover;
+    border: 1px solid seashell;
+    margin: 10px;
+}
+
+.lastcube {
+    height: 12vh;
+    width: 10vw;
+    margin: 10px;
+}
+
+.axe:hover {
+    border: 3px solid lime;
+}
+
+.pickaxe:hover {
+    border: 3px solid lime;
+}
+
+.shovel:hover {
+    border: 3px solid lime;
+}
+
+.lastcube:hover {
+    border: 3px solid lime;
+}
+
+@media(max-width: 500px) {
+    #world {
+        display: flex;
+        flex-direction: column;
+        height: fit-content;
+        width: 100vw;
+    }
+    .board {
+       height: 75%;
+        width: 100vw;
+        order: 2;
+        height: fit-content;
+        width: fit-content;
+    }
+    .sidebar {
+       height: 25%;
+        width: 100%;
+        order: 1;
+        flex-direction: row;
+    }
+    .cube {
+        width: 4.5vw;
+        height: 4vh;
+        display: inline-block;
+    }
+}
